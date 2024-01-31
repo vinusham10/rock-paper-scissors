@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito+Sans&family=Poppins&display=swap');
+body{
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    font-family: poppins;
+    text-align: center;
+    color: white;
+}
+#scoreZone{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.displayText{
+    font-size: 60px;
+    font-weight: bolder;
+}
+#gameZone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#userArea, #computerArea{
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ffc434;
+    padding: 15px;
+}
+#userArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#vsImage{
+    width: 100px;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+#userButtons{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.handImage{
+    display: none;
+    width: 350px;
+}
+#restartButton{
+    width: fit-content;
+    background-color: black;
+    color:#ffc434 ;
+    border: 1px solid #ffc434;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.resultContainer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 20px; 
+    margin-top: 10px;
+}
+
+.resultText {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
